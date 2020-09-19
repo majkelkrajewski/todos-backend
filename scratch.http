@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/todo
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+"title" : "lorem ipsum",
+  "description" : "Aenean sed consectetur sapien. Nunc eleifend, nibh eget vestibulum tincidunt, sapien diam auctor lectus, nec scelerisque augue lorem eget dolor. Sed porta ex pharetra, blandit lectus vitae, mollis nulla. Aenean ut mi laoreet nibh ultrices",
+  "userName" : "Adam Mickiewicz"
+}
+
+###
+
+GET http://loAccept: application/json
+calhost:8080/api/todo/1
+
+###
+
+PUT http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title" : "lorem ipsum new",
+  "description" : "Aenean sed consectetur sapien. Nunc eleifend, nibh eget vestibulum tincidunt, sapien diam auctor lectus, nec scelerisque augue lorem eget dolor. Sed porta ex pharetra, blandit lectus vitae, mollis nulla. Aenean ut mi laoreet nibh ultrices",
+  "userName" : "Adam Mickiewicz"
+}
+
+###
+
+DELETE http://localhost:8080/api/todo/1
+Accept: application/json
+
+
+
+
